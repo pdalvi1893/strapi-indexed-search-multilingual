@@ -295,6 +295,7 @@ module.exports = ({ strapi }) => ({
     );
     const searchFilters = strapi.config.get("search.search_filters") || null;
 
+    if(!entity?.publishedAt) return true;
     for (const { code } of cultures) {
       if (entity.locale === code) {
         if (searchFilters) {
