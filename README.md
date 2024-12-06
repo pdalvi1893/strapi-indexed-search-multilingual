@@ -10,7 +10,7 @@ Working on Strapi version: v4.*.*
 
 ```bash
 # install dependencies
-npm install strapi-indexed-search
+npm install strapi-indexed-search-multilingual
 
 ```
 
